@@ -4,7 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar'
 import Staff from './pages/Staff_Management/Staff';
-
+// new comment
+// new comment
+// new comment
+// new comment
+// new comment
+// new comment
+// new comment
 import BillPayment from './pages/financial_Management/BillPayment';
 import Payments from './pages/financial_Management/Payments';
 import Classfees from './pages/financial_Management/Classfees';
@@ -91,99 +97,99 @@ import UpdateProp from './pages/Registration_Management/UpdateProp';
 function App() {
   return (
     <>
-    <Navbar/>
-        <Routes>
-          {/* Basic */}
-          <Route exact path="/"  element = {<Home/>}/>
+      <Navbar />
+      <Routes>
+        {/* Basic */}
+        <Route exact path="/" element={<Home />} />
 
-          {/* Payment */}
-          <Route exact path="/Payments" element = {<Classfees/>}/>
-          <Route exact path="/Payments/Utility" element = {<BillManagement/>}/>
-          <Route exact path="/Payments/Utility/AddNew" element = {<BillPayment/>}/>
-          <Route exact path="/Payments/Classfees" element = {<Classfees/>}/>
-          <Route exact path="/Payments/Salary" element = {<Salary/>}/>
-          <Route exact path="/Payments/OwnerS" element = {<OwnerS/>}/>
-          <Route exact path="/Payments/Analysis" element = {<FinancialAnalysis/>}/>
+        {/* Payment */}
+        <Route exact path="/Payments" element={<Classfees />} />
+        <Route exact path="/Payments/Utility" element={<BillManagement />} />
+        <Route exact path="/Payments/Utility/AddNew" element={<BillPayment />} />
+        <Route exact path="/Payments/Classfees" element={<Classfees />} />
+        <Route exact path="/Payments/Salary" element={<Salary />} />
+        <Route exact path="/Payments/OwnerS" element={<OwnerS />} />
+        <Route exact path="/Payments/Analysis" element={<FinancialAnalysis />} />
 
-          {/* Staff */}
-          <Route exact path="/Staff" element = {<Manage/>}/>
-          <Route exact path="/Staff/Profile" element = {<Profile/>}/>
-          <Route exact path="/Staff/Edit" element = {<Manage/>}/>
-          <Route exact path="/Staff/Reports" element = {<Reports/>}/>
-          {/* <Route exact path="/Staff/Add" element = {<Add/>}/> */}
-          <Route exact path="/Edit/UpdateStaff" element = {<UpdateStaff/>}/>
-          <Route exact path="/Staff/TeacherHandle" element = {<HandleTeachers/>}/>
-          <Route exact path="/Staff/ProvideLogin" element = {<ProvideLogin/>}/>
+        {/* Staff */}
+        <Route exact path="/Staff" element={<Manage />} />
+        <Route exact path="/Staff/Profile" element={<Profile />} />
+        <Route exact path="/Staff/Edit" element={<Manage />} />
+        <Route exact path="/Staff/Reports" element={<Reports />} />
+        {/* <Route exact path="/Staff/Add" element = {<Add/>}/> */}
+        <Route exact path="/Edit/UpdateStaff" element={<UpdateStaff />} />
+        <Route exact path="/Staff/TeacherHandle" element={<HandleTeachers />} />
+        <Route exact path="/Staff/ProvideLogin" element={<ProvideLogin />} />
 
-          {/* Quiz */}
-          <Route exact path="/Quiz" element = {<QuizUpload/>}/>
-          <Route exact path="/Quiz_Management/QuizAnalysis" element = {<QuizAnalysis/>}/>
-          <Route exact path="/Quiz_Management/QuizUpload" element = {<QuizUpload/>}/>
-          <Route exact path="/Quiz_Management/QuizResults" element = {<QuizResults/>}/>
-          <Route exact path="/Quiz_Management/QuizEdit" element = {<QuizEdit/>}/>
-          <Route exact path="Quiz_Management/QuizUpload/InsertQuiz" element = {<InsertQuiz/>}/>
-          <Route exact path="Quiz_Management/QuizUpload/EditQuiz" element = {<EditQuiz/>}/>
-          <Route exact path="Quiz_Management/QuizDisplay" element = {<QuizDisplay/>}/>
-          <Route exact path="Quiz_Management/QuizDetails" element = {<QuizDetails/>}/>
-          <Route exact path="/Quiz_Management/QuizEdit/manageQuiz" element = {<ManageQuiz/>}/>
+        {/* Quiz */}
+        <Route exact path="/Quiz" element={<QuizUpload />} />
+        <Route exact path="/Quiz_Management/QuizAnalysis" element={<QuizAnalysis />} />
+        <Route exact path="/Quiz_Management/QuizUpload" element={<QuizUpload />} />
+        <Route exact path="/Quiz_Management/QuizResults" element={<QuizResults />} />
+        <Route exact path="/Quiz_Management/QuizEdit" element={<QuizEdit />} />
+        <Route exact path="Quiz_Management/QuizUpload/InsertQuiz" element={<InsertQuiz />} />
+        <Route exact path="Quiz_Management/QuizUpload/EditQuiz" element={<EditQuiz />} />
+        <Route exact path="Quiz_Management/QuizDisplay" element={<QuizDisplay />} />
+        <Route exact path="Quiz_Management/QuizDetails" element={<QuizDetails />} />
+        <Route exact path="/Quiz_Management/QuizEdit/manageQuiz" element={<ManageQuiz />} />
 
-          {/* Assignment */}
-          <Route exact path="/Assignment" element = {<Assignment/>}/>
-          <Route exact path="/Assignment/AddAssignment" element = {<AddAssignment/>}/>
-          <Route exact path="/Assignment/ManageAssignment" element = {<ManageAssignment/>}/>
-          <Route exact path="/Assignment/EditAssignment" element = {<EditAssignment/>}/>
-          <Route exact path="/SubmitAssignment/SubmitionPage" element = {<SubmitionPage/>}/>
-          <Route exact path="/Assignment/AssignmentResult" element = {<AssignmentResult/>}/>
-          <Route exact path="/Assignment" element = {<Assignment/>}/>
-          <Route exact path="/Assignment/AddAssignment" element = {<AddAssignment/>}/>
-          <Route exact path="/ManageAssignment/EditAssignment" element = {<EditAssignment/>}/>
-          <Route exact path="/Assignment/MarkSheet" element = {<MarkSheet/>}/>
-          <Route exact path="/AssignmentResults/AllSubmitions" element = {<AllSubmitions/>}/>
-          <Route exact path="/AssignmentResults/GradeAssignments" element = {<GradeAssignments/>}/>
-          
-          <Route exact path="/Assignment/SubmitionPage" element = {<SubmitionPage/>}/>
-          <Route exact path="/ModulePage/SubmitAssignment" element = {<SubmitAssignment/>}/>
-          
-          {/* Module */}
-          {/* <Route exact path="/Classes/AddClass" element = {<Classes/>}/> */}
-          <Route exact path="/Classes/AddClass" element = {<AddClass/>}/>
-          <Route exact path="/Classes/EditClass" element = {<EditClass/>}/>
-          <Route exact path="/Classes/UpdateClass" element = {<UpdateClass/>}/>
-          <Route exact path="/Classes/AddNotes" element = {<AddNotes/>}/>
-          <Route exact path="/Classes/ModulePage" element = {<ModulePage/>}/>
-          <Route exact path="/Classes/ClassesList" element = {<ClassesList/>}/>
-          <Route exact path="/Classes/AddRecordings" element = {<AddRecordings/>}/>
-          <Route exact path="/Classes/AddNotice" element = {<AddNotice/>}/>
-          <Route exact path="/EditClass/UpdateClass" element = {<UpdateClass/>}/>
-          
+        {/* Assignment */}
+        <Route exact path="/Assignment" element={<Assignment />} />
+        <Route exact path="/Assignment/AddAssignment" element={<AddAssignment />} />
+        <Route exact path="/Assignment/ManageAssignment" element={<ManageAssignment />} />
+        <Route exact path="/Assignment/EditAssignment" element={<EditAssignment />} />
+        <Route exact path="/SubmitAssignment/SubmitionPage" element={<SubmitionPage />} />
+        <Route exact path="/Assignment/AssignmentResult" element={<AssignmentResult />} />
+        <Route exact path="/Assignment" element={<Assignment />} />
+        <Route exact path="/Assignment/AddAssignment" element={<AddAssignment />} />
+        <Route exact path="/ManageAssignment/EditAssignment" element={<EditAssignment />} />
+        <Route exact path="/Assignment/MarkSheet" element={<MarkSheet />} />
+        <Route exact path="/AssignmentResults/AllSubmitions" element={<AllSubmitions />} />
+        <Route exact path="/AssignmentResults/GradeAssignments" element={<GradeAssignments />} />
 
-          {/* Support Service */}
-          <Route exact path="/SupportService" element = {<SupportDesk/>}/>
-          <Route exact path="/Support_Service/SupportDesk/Ticket" element = {<Ticket/>}/>
+        <Route exact path="/Assignment/SubmitionPage" element={<SubmitionPage />} />
+        <Route exact path="/ModulePage/SubmitAssignment" element={<SubmitAssignment />} />
 
-          {/* Registration */}
-          <Route exact path="/Login" element = {<Login/>}/>
-          <Route exact path="/RegisterStudent" element = {<RegistrationForm_st/>}/>
-          <Route exact path="/Home/RegisterStudent" element = {<RegistrationForm_sth/>}/>
-          <Route exact path="/RegisterTeacher" element = {<RegistrationForm_te/>}/>
-          <Route exact path="/ForgetPassword" element = {<Forgetpw/>}/>
-          <Route exact path="/ForgetResetPassword" element = {<Forgetpw_reset/>}/>
-          <Route exact path="/Userprofile" element = {<Userprofile/>}/>
-          <Route exact path="/UserProfile/EditUserProfile" element = {<EditUserProfile/>}/>
-          <Route exact path="/Admin" element = {<Admindel/>}/>
-          <Route exact path="/StProfile" element = {<StProfile/>}/>
-          <Route exact path="/ChangePassword" element = {<ChangePw/>}/>
-          <Route exact path="/UpdateUserProfile" element = {<UpdateProp/>}/>
+        {/* Module */}
+        {/* <Route exact path="/Classes/AddClass" element = {<Classes/>}/> */}
+        <Route exact path="/Classes/AddClass" element={<AddClass />} />
+        <Route exact path="/Classes/EditClass" element={<EditClass />} />
+        <Route exact path="/Classes/UpdateClass" element={<UpdateClass />} />
+        <Route exact path="/Classes/AddNotes" element={<AddNotes />} />
+        <Route exact path="/Classes/ModulePage" element={<ModulePage />} />
+        <Route exact path="/Classes/ClassesList" element={<ClassesList />} />
+        <Route exact path="/Classes/AddRecordings" element={<AddRecordings />} />
+        <Route exact path="/Classes/AddNotice" element={<AddNotice />} />
+        <Route exact path="/EditClass/UpdateClass" element={<UpdateClass />} />
 
-          
-          {/* Attendence */}
-          <Route exact path="/Attendance" element = {<Attendance/>}/>
-          <Route exact path="/Attendance_Management/Attendanceform" element = {<Attendanceform/>}/>
 
-          <Route path="*" element = {<Error404/>}/>
+        {/* Support Service */}
+        <Route exact path="/SupportService" element={<SupportDesk />} />
+        <Route exact path="/Support_Service/SupportDesk/Ticket" element={<Ticket />} />
+
+        {/* Registration */}
+        <Route exact path="/Login" element={<Login />} />
+        <Route exact path="/RegisterStudent" element={<RegistrationForm_st />} />
+        <Route exact path="/Home/RegisterStudent" element={<RegistrationForm_sth />} />
+        <Route exact path="/RegisterTeacher" element={<RegistrationForm_te />} />
+        <Route exact path="/ForgetPassword" element={<Forgetpw />} />
+        <Route exact path="/ForgetResetPassword" element={<Forgetpw_reset />} />
+        <Route exact path="/Userprofile" element={<Userprofile />} />
+        <Route exact path="/UserProfile/EditUserProfile" element={<EditUserProfile />} />
+        <Route exact path="/Admin" element={<Admindel />} />
+        <Route exact path="/StProfile" element={<StProfile />} />
+        <Route exact path="/ChangePassword" element={<ChangePw />} />
+        <Route exact path="/UpdateUserProfile" element={<UpdateProp />} />
+
+
+        {/* Attendence */}
+        <Route exact path="/Attendance" element={<Attendance />} />
+        <Route exact path="/Attendance_Management/Attendanceform" element={<Attendanceform />} />
+
+        <Route path="*" element={<Error404 />} />
 
       </Routes>
-      <Footer/> 
+      <Footer />
     </>
 
   );
